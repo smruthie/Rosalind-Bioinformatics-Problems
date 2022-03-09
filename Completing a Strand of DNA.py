@@ -3,7 +3,7 @@
 wrong_letter = 0
 while True:
 	DNA = (input("Enter 5' to 3' DNA Sequence: "))
-	DNA = list(DNA)
+	DNA = list(DNA.upper())
 	nucleotides = ['A', 'T', 'C', 'G']
 	reverse_DNA = []
 	for i in DNA:
@@ -21,5 +21,7 @@ while True:
 		print("One or more of the letters entered do not represent a DNA nucleotide. Please try again.", "\n")
 		wrong_letter = 0
 	else:
+		print("\n")
+		print("      5' to 3' DNA Sequence:", ''.join(DNA))
 		print("      3' to 5' DNA Sequence:", ''.join(reverse_DNA))
 		break
