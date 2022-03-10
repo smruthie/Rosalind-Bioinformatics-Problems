@@ -22,6 +22,6 @@ while True:
 		wrong_letter = 0
 	else:
 		print("\n")
-		print("      5' to 3' DNA Sequence:", ''.join(DNA))
-		print("      3' to 5' DNA Sequence:", ''.join(reverse_DNA))
+		print("      5' -", ''.join(DNA), "- 3'")
+		print("      3' -", ''.join(reverse_DNA), "- 5'")
 		break
